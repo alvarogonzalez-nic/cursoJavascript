@@ -12,7 +12,7 @@ function simuladorPrestamo() {
         alert("Por favor, ingrese un valor numérico ");
         return;
     }
-    // Tasas de interes
+    // Interes
     var interes;
     switch(cuotas) {
         case 6:
@@ -41,7 +41,7 @@ function simuladorPrestamo() {
     // Valor de Cuotas
     var montoCuota = totalPagar / cuotas;
 
-    // Mostramos el resultado en un mensaje de alerta
+    // alerta con resultados
     alert("Monto del préstamo: $" + monto.toFixed(2) +
         "\nNúmero de cuotas: " + cuotas +
         "\nTasa de interés : " + interes*100 + "%" +
